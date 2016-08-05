@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Helvetica;
+    src: url(../font/HelveticaNeue.ttf);
+}
+
+@font-face {
+    font-family: FuturaPT;
+    src: url(../font/FuturaPTDemi.otf);
+}
+
+@font-face {
+    font-family: Crimson;
+    src: url(../font/CrimsonText-Regular.ttf);
+}
+
+@font-face {
+    font-family: FontAwesome;
+    src: url(../font/font-awesome-4.6.3/fonts/fontawesome-webfont.ttf);
+}
