@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a0508e4-eeda-4fc9-955f-7d50e43e7b91" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/sas.scss" afterPath="$PROJECT_DIR$/css/sas.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/start.html" afterPath="$PROJECT_DIR$/start.html" />
     </list>
     <ignored path="FinalTask.iws" />
@@ -39,12 +38,13 @@
           <file leaf-file-name="sas.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/sas.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.61445785">
-                  <caret line="108" column="26" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="26" />
+                <state vertical-scroll-proportion="3.0873494">
+                  <caret line="1045" column="29" selection-start-line="1045" selection-start-column="29" selection-end-line="1045" selection-end-column="29" />
                   <folding>
-                    <element signature="e#9387#9448#0" expanded="false" />
-                    <element signature="e#11292#11358#0" expanded="false" />
-                    <element signature="e#18974#19081#0" expanded="false" />
+                    <element signature="e#9424#9485#0" expanded="false" />
+                    <element signature="e#11329#11395#0" expanded="false" />
+                    <element signature="e#19011#19118#0" expanded="false" />
+                    <element signature="e#20335#20964#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -66,7 +66,7 @@
             <entry file="file://$PROJECT_DIR$/css/sas.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="981" column="35" selection-start-line="981" selection-start-column="35" selection-end-line="981" selection-end-column="35" />
+                  <caret line="992" column="35" selection-start-line="992" selection-start-column="35" selection-end-line="992" selection-end-column="35" />
                   <folding />
                 </state>
               </provider>
@@ -131,8 +131,8 @@
           <file leaf-file-name="start.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/start.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3767313">
-                  <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+                <state vertical-scroll-proportion="0.47091413">
+                  <caret line="25" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
                   <folding>
                     <marker date="1470449170875" expanded="true" signature="6340:6482" placeholder="..." />
                   </folding>
@@ -476,9 +476,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="914" column="18" selection-start-line="914" selection-start-column="18" selection-end-line="914" selection-end-column="18" />
           <folding>
-            <element signature="e#9387#9448#0" expanded="false" />
-            <element signature="e#11292#11358#0" expanded="false" />
-            <element signature="e#18974#19081#0" expanded="false" />
+            <element signature="e#9424#9485#0" expanded="false" />
+            <element signature="e#11329#11395#0" expanded="false" />
+            <element signature="e#19011#19118#0" expanded="false" />
+            <element signature="e#20335#20964#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -612,7 +613,7 @@
     <entry file="file://$PROJECT_DIR$/css/sas.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="981" column="35" selection-start-line="981" selection-start-column="35" selection-end-line="981" selection-end-column="35" />
+          <caret line="992" column="35" selection-start-line="992" selection-start-column="35" selection-end-line="992" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -629,12 +630,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/sas.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61445785">
-          <caret line="108" column="26" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="26" />
+        <state vertical-scroll-proportion="3.0873494">
+          <caret line="1045" column="29" selection-start-line="1045" selection-start-column="29" selection-end-line="1045" selection-end-column="29" />
           <folding>
-            <element signature="e#9387#9448#0" expanded="false" />
-            <element signature="e#11292#11358#0" expanded="false" />
-            <element signature="e#18974#19081#0" expanded="false" />
+            <element signature="e#9424#9485#0" expanded="false" />
+            <element signature="e#11329#11395#0" expanded="false" />
+            <element signature="e#19011#19118#0" expanded="false" />
+            <element signature="e#20335#20964#0" expanded="false" />
           </folding>
         </state>
       </provider>

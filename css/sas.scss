@@ -126,6 +126,8 @@ header {
       float: right;
       border-bottom: 2px solid #e5e5e5;
       margin-top: 16px;
+    position: absolute;
+    right:0;
     @media screen and (max-width: 1024px) and (min-width: 420px)  {
       border:none;
       &:hover {
@@ -962,8 +964,9 @@ footer {
       }
     }
     .banner-right.tablet {
+      border: none;
       display: inline-block;
-      width: 33.3%;
+      width: 33.1%;
       float: left;
       overflow: hidden;
       position: relative;
@@ -1033,7 +1036,17 @@ footer {
         }
       }
     }
-
+    footer {
+      .share {
+        position: relative;
+        bottom: 3px;
+      }
+      .footer-right {
+        a {
+          margin-right: 10px;
+        }
+      }
+    }
 }
 
 
