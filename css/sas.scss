@@ -64,6 +64,9 @@ header {
   background-color: #ffffff;
   padding-top: 30px;
   padding-bottom: 25px;
+  .container {
+    position: relative;
+  }
   .logo {
     font: {
       family: FuturaPT;
@@ -102,8 +105,8 @@ header {
       li {
         display: inline-block;
         margin-right: 58px;
-        @media screen and (max-width: 1024px) and (min-width: 420px) {
-          margin-right: 10px;
+        @media screen and (max-width: 1025px) and (min-width: 420px) {
+          margin-right: 15px;
         }
         &:nth-last-child(1) {
           margin-right: 0;
@@ -122,12 +125,14 @@ header {
   .search {
       float: right;
       border-bottom: 2px solid #e5e5e5;
-      margin-top: 18px;
+      margin-top: 16px;
     @media screen and (max-width: 1024px) and (min-width: 420px)  {
       border:none;
       &:hover {
+        position: absolute;
+        right: 0;
         input[type="search"] {
-          width:98px;
+          width:144px;
           transition: width .2s ease-in-out;
           border-bottom:2px solid #e5e5e5;
         }
@@ -430,7 +435,7 @@ main {
         }
         .dot-bg {
           width: 100%;
-          background: white;
+          background: #f7f7f7;
           height: 80px;
         }
       }
@@ -502,6 +507,8 @@ main {
 
   .banners {
     border-bottom: 1px solid #f6f6f6;
+    width:100%;
+    margin: 0 auto;
   }
   .banner-left {
     float: left;
@@ -537,7 +544,7 @@ main {
       }
     }
       img {
-        min-width: 100%;
+        width: 100%;
         min-height: 385px;
       }
     &:hover {
@@ -686,6 +693,18 @@ main {
       }
       h4 {
         margin: 0;
+      }
+      .phone-tablet{
+        display: none;
+        h4{
+          margin-bottom: 12px;
+        }
+        span {
+          font: {
+            family: Helvetica;
+            size: 14px;
+          };
+        }
       }
       .question-descr {
         font: {
@@ -847,7 +866,7 @@ footer {
 **********************************
 */
 
-@media screen and (max-width: 1024px) and (min-width: 420px) {
+@media screen and (max-width: 1025px) and (min-width: 420px) {
   .modal-content{
     display: none;
   }
@@ -922,22 +941,20 @@ footer {
 
     }
     .banner-left {
-      max-height: 253px;
       width: 66.4%;
+      min-height: 253px;
       img {
+      width:100%;
         min-height: 253px;
-        max-width: 82%;
-        min-width: 0px;
-        position: relative;
-        left: 7%;
+
       }
       .name-and-description-of-banner {
-        right: 76px;
+        right: 9%;
         top: 25px;
       }
     }
     .banner-right {
-      width: 33.4%;
+      width: 33.3%;
       display: none;
       img {
         min-height: 253px;
@@ -945,8 +962,6 @@ footer {
       }
     }
     .banner-right.tablet {
-
-      min-height: 253px;
       display: inline-block;
       width: 33.3%;
       float: left;
@@ -954,15 +969,15 @@ footer {
       position: relative;
       img {
         min-height: 100px;
-        width: 60%;
+        width: 100%;
         position: relative;
-        left: 19%;
+        left: 0;
         bottom: 18px;
       }
       .name-and-description-of-banner {
         position: absolute;
         width: 100%;
-        top: 160px;
+        top: 60%;
         left: 0;
       }
     }
@@ -973,49 +988,53 @@ footer {
       h2 {
         margin-bottom: 85px;
       }
-
-      .item {
-        width: 26.4%;
-        margin-right: 40px;
-        &:nth-child(3) {
-          margin-right: 0;
-        }
-        &:last-child {
-          display: none;
+      .item-container {
+        .item {
+          width: 26.4%;
+          margin-right: 40px;
+          &:nth-child(3) {
+            margin-right: 0;
+          }
+          &:last-child {
+            display: none;
+          }
         }
       }
     }
   }
     .feedback {
-      position: relative;
-      .feedback-column {
+      .container {
+        .feedback-column {
 
-        &:first-child{
-          width: 300px;
-        }
-        &:nth-child(3),&:nth-child(2){
-          width: 260px;
-        }
-        &:nth-child(2) {
-          border: none;
-        }
-        &:nth-child(3) {
-          .question-descr {
+          &:first-child {
+            width: 32%;
+          }
+          &:nth-child(3), &:nth-child(2) {
+            width: 27%;
+          }
+          &:nth-child(2) {
+            border: none;
+          }
+          &:nth-child(3) {
+            position: relative;
+            .question-descr {
+              display: none;
+            }
+            .social {
+              margin-top: 180px;
+            }
+            .phone-tablet {
+              display: block;
+            }
+          }
+          &:nth-child(4) {
             display: none;
           }
-          .social {
-            margin-top: 180px;
-          }
-        }
-        &:nth-child(4){
-          position: absolute;
-          right: 51px;
-          top: 90px;
         }
       }
     }
 
-
 }
+
 
 
