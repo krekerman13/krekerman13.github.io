@@ -1,0 +1,1795 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Helvetica;
+  src: url(../font/HelveticaNeue.ttf);
+}
+@font-face {
+  font-family: FuturaPT;
+  src: url(../font/FuturaPTDemi.otf);
+}
+@font-face {
+  font-family: Crimson;
+  src: url(../font/CrimsonText-Regular.ttf);
+}
+@font-face {
+  font-family: FontAwesome;
+  src: url(../font/font-awesome-4.6.3/fonts/fontawesome-webfont.ttf);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000321}}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000326}}
+.clearfix:after {
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000350}}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000356}}
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+/* *****************************
+// ╤╥╚╦▓ ─╦▀ ├╬╦╬┬═╬п ╤╥╬╨▓═╩╚**
+//******************************
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000368}}
+header {
+  background-color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000372}}
+header .container {
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000375}}
+header .logo {
+  font-family: FuturaPT;
+  font-size: 30px;
+  margin-top: -14px;
+  letter-spacing: 1.7px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000383}}
+header .logo.mobile {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000386}}
+header .sign-in-link, header .bag {
+  float: right;
+  letter-spacing: 0.16px;
+  position: relative;
+  bottom: 5px;
+  font-family: Helvetica;
+  font-size: 12px;
+  font-weight: 600;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000331}}
+header .sign-in-link:hover, header .bag:hover {
+  color: #f25663;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000334}}
+header .sign-in-link:after, header .bag:after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0px;
+  margin: 0 auto;
+  margin-top: 2px;
+  background-color: #808080;
+  -webkit-transition: width .3s ease-in-out;
+          transition: width .3s ease-in-out;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000344}}
+header .sign-in-link:hover:after, header .bag:hover:after, header .sign-in-link:focus:after, header .bag:focus:after {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000398}}
+header .bag {
+  margin-left: 55px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003101}}
+header .bag i {
+  font-size: 14px;
+  margin-right: 13px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003107}}
+header .main-menu {
+  float: left;
+  margin-top: 18px;
+}
+@media screen and (max-width: 700px) and (min-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003107}}
+  header .main-menu {
+    width: 2%;
+    margin-left: 50%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003114}}
+header .main-menu .search {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003117}}
+header .main-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003121}}
+header .main-menu ul li {
+  display: inline-block;
+  margin-right: 58px;
+}
+@media screen and (max-width: 1025px) and (min-width: 420px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003121}}
+  header .main-menu ul li {
+    margin-right: 15px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003127}}
+header .main-menu ul li:nth-last-child(1) {
+  margin-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003130}}
+header .main-menu ul li a {
+  letter-spacing: 0.42px;
+  font-family: FuturaPT;
+  font-size: 14px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000331}}
+header .main-menu ul li a:hover {
+  color: #f25663;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000334}}
+header .main-menu ul li a:after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0px;
+  margin: 0 auto;
+  margin-top: 2px;
+  background-color: #808080;
+  -webkit-transition: width .3s ease-in-out;
+          transition: width .3s ease-in-out;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000344}}
+header .main-menu ul li a:hover:after, header .main-menu ul li a:focus:after {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003141}}
+header .main-menu-icon-mobile {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003144}}
+header .search {
+  float: right;
+  border-bottom: 2px solid #e5e5e5;
+  margin-top: 16px;
+  position: absolute;
+  right: 0;
+}
+@media screen and (max-width: 1024px) and (min-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003144}}
+  header .search {
+    border: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003152}}
+  header .search:hover {
+    position: absolute;
+    right: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003155}}
+  header .search:hover input[type="search"] {
+    width: 144px;
+    -webkit-transition: width .2s ease-in-out;
+            transition: width .2s ease-in-out;
+    border-bottom: 2px solid #e5e5e5;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003163}}
+header .search input[type="search"] {
+  border: none;
+  outline: none;
+  width: 98px;
+  display: inline-block;
+}
+@media screen and (max-width: 1024px) and (min-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003163}}
+  header .search input[type="search"] {
+    width: 0px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003171}}
+header .search input[type="search"]:-moz-placeholder {
+  color: #a8a8a8;
+  font-family: FuturaPT;
+  font-size: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003178}}
+header .search input[type="search"]::-webkit-input-placeholder {
+  color: #a8a8a8;
+  font-family: FuturaPT;
+  font-size: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003187}}
+header .search .search-btn {
+  display: inline-block;
+  float: right;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: url("../img/search-icon.png") no-repeat center;
+  outline: none;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003196}}
+header .search .search-btn:hover {
+  background: url("../img/search-icon-hover.png") no-repeat center;
+  -webkit-transition: background ease-out 3s;
+          transition: background ease-out 3s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003205}}
+main .carousel {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  height: 838px;
+  text-align: center;
+}
+@media screen and (max-width: 1024px) and (min-width: 420px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003205}}
+  main .carousel {
+    width: 90%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003215}}
+main .carousel .left-arrow, main .carousel .right-arrow {
+  position: absolute;
+  z-index: 100;
+  top: 405px;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003221}}
+main .carousel .left-arrow:hover, main .carousel .right-arrow:hover {
+  color: #f25663;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003227}}
+main .carousel .left-arrow {
+  left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003231}}
+main .carousel .right-arrow {
+  right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003235}}
+main .carousel .image {
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  max-height: 838px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003242}}
+main .carousel .image .slide {
+  width: 100%;
+  min-height: 837px;
+  display: none;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003250}}
+main .carousel .image .slide.slide1 img {
+  width: 100%;
+  min-height: 838px;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003254}}
+main .carousel .image .slide.slide1 img:nth-child(2) {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003257}}
+main .carousel .image .slide.slide1 img:nth-child(3) {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003264}}
+main .carousel .image .slide.slide2 {
+  position: relative;
+  padding-top: 237px;
+  background: #f5de75;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003269}}
+main .carousel .image .slide.slide2 img {
+  position: absolute;
+  left: 50%;
+  top: 142px;
+  margin-left: -136px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003274}}
+main .carousel .image .slide.slide2 img:nth-child(2) {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003278}}
+main .carousel .image .slide.slide2 .modal-title {
+  color: white;
+  margin-bottom: 242px;
+  display: block;
+  font-size: 210px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003284}}
+main .carousel .image .slide.slide2 p {
+  font-family: FuturaPT;
+  font-size: 24px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 43px;
+  display: block;
+  width: 469px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003297}}
+main .carousel .image .slide.slide2 p.modal-description {
+  font-family: Helvetica;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 0;
+  width: 539px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003304}}
+main .carousel .image .slide.slide2 span {
+  color: #add1a7;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003311}}
+main .carousel .image .slide.slide3 {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003313}}
+main .carousel .image .slide.slide3 .slide-left, main .carousel .image .slide.slide3 .slide-right {
+  width: 66.6%;
+  float: left;
+  height: 758px;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003318}}
+main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-left, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-left, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right {
+  overflow: hidden;
+  max-height: 384px;
+  float: left;
+  width: 66.6%;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003324}}
+main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-left img, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-left img, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right img, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right img {
+  width: 100%;
+  min-height: 384px;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003329}}
+main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-left .name-and-description-of-banner, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-left .name-and-description-of-banner, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right .name-and-description-of-banner, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right .name-and-description-of-banner {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 40%;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003335}}
+main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-left .name-and-description-of-banner .name-of-banner, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-left .name-and-description-of-banner .name-of-banner, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right .name-and-description-of-banner .name-of-banner, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right .name-and-description-of-banner .name-of-banner {
+  color: white;
+  font-family: FuturaPT;
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003345}}
+main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-left .name-and-description-of-banner .description-of-banner, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-left .name-and-description-of-banner .description-of-banner, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right .name-and-description-of-banner .description-of-banner, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right .name-and-description-of-banner .description-of-banner {
+  color: white;
+  font-family: Crimson;
+  font-size: 16px;
+  font-style: italic;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000331}}
+main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-left .name-and-description-of-banner .name-of-banner:hover, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-left .name-and-description-of-banner .name-of-banner:hover, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right .name-and-description-of-banner .name-of-banner:hover, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right .name-and-description-of-banner .name-of-banner:hover, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-left .name-and-description-of-banner .description-of-banner:hover, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-left .name-and-description-of-banner .description-of-banner:hover, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right .name-and-description-of-banner .description-of-banner:hover, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right .name-and-description-of-banner .description-of-banner:hover {
+  color: #f25663;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000334}}
+main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-left .name-and-description-of-banner .name-of-banner:after, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-left .name-and-description-of-banner .name-of-banner:after, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right .name-and-description-of-banner .name-of-banner:after, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right .name-and-description-of-banner .name-of-banner:after, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-left .name-and-description-of-banner .description-of-banner:after, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-left .name-and-description-of-banner .description-of-banner:after, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right .name-and-description-of-banner .description-of-banner:after, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right .name-and-description-of-banner .description-of-banner:after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0px;
+  margin: 0 auto;
+  margin-top: 2px;
+  background-color: #808080;
+  -webkit-transition: width .3s ease-in-out;
+          transition: width .3s ease-in-out;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000344}}
+main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-left .name-and-description-of-banner .name-of-banner:hover:after, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-left .name-and-description-of-banner .name-of-banner:hover:after, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right .name-and-description-of-banner .name-of-banner:hover:after, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right .name-and-description-of-banner .name-of-banner:hover:after, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-left .name-and-description-of-banner .name-of-banner:focus:after, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-left .name-and-description-of-banner .name-of-banner:focus:after, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right .name-and-description-of-banner .name-of-banner:focus:after, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right .name-and-description-of-banner .name-of-banner:focus:after, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-left .name-and-description-of-banner .description-of-banner:hover:after, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-left .name-and-description-of-banner .description-of-banner:hover:after, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right .name-and-description-of-banner .description-of-banner:hover:after, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right .name-and-description-of-banner .description-of-banner:hover:after, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-left .name-and-description-of-banner .description-of-banner:focus:after, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-left .name-and-description-of-banner .description-of-banner:focus:after, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right .name-and-description-of-banner .description-of-banner:focus:after, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right .name-and-description-of-banner .description-of-banner:focus:after {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003360}}
+main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-left:hover .name-and-description-of-banner .name-of-banner::after, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-left:hover .name-and-description-of-banner .name-of-banner::after, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right:hover .name-and-description-of-banner .name-of-banner::after, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right:hover .name-and-description-of-banner .name-of-banner::after {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003363}}
+main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-left:hover .name-and-description-of-banner .name-of-banner, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-left:hover .name-and-description-of-banner .name-of-banner, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right:hover .name-and-description-of-banner .name-of-banner, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right:hover .name-and-description-of-banner .name-of-banner {
+  color: #f25663;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003369}}
+main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right {
+  float: right;
+  width: 33.4%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003374}}
+main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right img, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right img {
+  width: 100%;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003378}}
+main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right .name-and-description-of-banner, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right .name-and-description-of-banner {
+  width: 100%;
+  top: 290px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003381}}
+main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right .name-and-description-of-banner .name-of-banner, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right .name-and-description-of-banner .name-of-banner {
+  color: black;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003384}}
+main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right .name-and-description-of-banner .description-of-banner, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right .name-and-description-of-banner .description-of-banner {
+  color: #757575;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003392}}
+main .carousel .image .slide.slide3 .slide-left .link-carousel, main .carousel .image .slide.slide3 .slide-right .link-carousel {
+  display: inline-block;
+  width: 33.3%;
+  float: left;
+  max-height: 374px;
+  overflow: hidden;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003399}}
+main .carousel .image .slide.slide3 .slide-left .link-carousel img, main .carousel .image .slide.slide3 .slide-right .link-carousel img {
+  min-height: 385px;
+  position: relative;
+  right: 20px;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003407}}
+main .carousel .image .slide.slide3 .slide-left .link-carousel .name-and-description-of-banner, main .carousel .image .slide.slide3 .slide-right .link-carousel .name-and-description-of-banner {
+  position: absolute;
+  top: 262px;
+  right: 0;
+  width: 100%;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003413}}
+main .carousel .image .slide.slide3 .slide-left .link-carousel .name-and-description-of-banner .name-of-banner, main .carousel .image .slide.slide3 .slide-right .link-carousel .name-and-description-of-banner .name-of-banner {
+  color: white;
+  font-family: FuturaPT;
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000331}}
+main .carousel .image .slide.slide3 .slide-left .link-carousel .name-and-description-of-banner .name-of-banner:hover, main .carousel .image .slide.slide3 .slide-right .link-carousel .name-and-description-of-banner .name-of-banner:hover {
+  color: #f25663;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000334}}
+main .carousel .image .slide.slide3 .slide-left .link-carousel .name-and-description-of-banner .name-of-banner:after, main .carousel .image .slide.slide3 .slide-right .link-carousel .name-and-description-of-banner .name-of-banner:after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0px;
+  margin: 0 auto;
+  margin-top: 2px;
+  background-color: #808080;
+  -webkit-transition: width .3s ease-in-out;
+          transition: width .3s ease-in-out;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000344}}
+main .carousel .image .slide.slide3 .slide-left .link-carousel .name-and-description-of-banner .name-of-banner:hover:after, main .carousel .image .slide.slide3 .slide-right .link-carousel .name-and-description-of-banner .name-of-banner:hover:after, main .carousel .image .slide.slide3 .slide-left .link-carousel .name-and-description-of-banner .name-of-banner:focus:after, main .carousel .image .slide.slide3 .slide-right .link-carousel .name-and-description-of-banner .name-of-banner:focus:after {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003424}}
+main .carousel .image .slide.slide3 .slide-left .link-carousel .name-and-description-of-banner .description-of-banner, main .carousel .image .slide.slide3 .slide-right .link-carousel .name-and-description-of-banner .description-of-banner {
+  color: white;
+  font-family: Crimson;
+  font-size: 16px;
+  font-style: italic;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003436}}
+main .carousel .image .slide.slide3 .slide-left .link-carousel:hover .name-and-description-of-banner .name-of-banner::after, main .carousel .image .slide.slide3 .slide-right .link-carousel:hover .name-and-description-of-banner .name-of-banner::after {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003439}}
+main .carousel .image .slide.slide3 .slide-left .link-carousel:hover .name-and-description-of-banner .name-of-banner, main .carousel .image .slide.slide3 .slide-right .link-carousel:hover .name-and-description-of-banner .name-of-banner {
+  color: #f25663;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003448}}
+main .carousel .image .slide.slide3 .link-carousel.bag .name-and-description-of-banner .name-of-banner {
+  color: red;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003451}}
+main .carousel .image .slide.slide3 .link-carousel.bag .name-and-description-of-banner .description-of-banner {
+  color: #757575;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003457}}
+main .carousel .image .slide.slide3 .slide-right {
+  width: 33.4%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003458}}
+main .carousel .image .slide.slide3 .slide-right .right-link {
+  position: relative;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003461}}
+main .carousel .image .slide.slide3 .slide-right .right-link img {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003468}}
+main .carousel .image .slide.slide3 .slide-right:hover .name-and-description-of-banner .name-of-banner::after {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003472}}
+main .carousel .image .slide.slide3 .slide-right .name-and-description-of-banner {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 100%;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003478}}
+main .carousel .image .slide.slide3 .slide-right .name-and-description-of-banner .name-of-banner {
+  color: black;
+  font-family: FuturaPT;
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000331}}
+main .carousel .image .slide.slide3 .slide-right .name-and-description-of-banner .name-of-banner:hover {
+  color: #f25663;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000334}}
+main .carousel .image .slide.slide3 .slide-right .name-and-description-of-banner .name-of-banner:after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0px;
+  margin: 0 auto;
+  margin-top: 2px;
+  background-color: #808080;
+  -webkit-transition: width .3s ease-in-out;
+          transition: width .3s ease-in-out;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000344}}
+main .carousel .image .slide.slide3 .slide-right .name-and-description-of-banner .name-of-banner:hover:after, main .carousel .image .slide.slide3 .slide-right .name-and-description-of-banner .name-of-banner:focus:after {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003489}}
+main .carousel .image .slide.slide3 .slide-right .name-and-description-of-banner .description-of-banner {
+  color: #757575;
+  font-family: Crimson;
+  font-size: 16px;
+  font-style: italic;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003499}}
+main .carousel .image .slide.slide3 .dot-bg {
+  width: 100%;
+  background: #f7f7f7;
+  height: 80px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003506}}
+main .carousel .image .link-carousel.without-img {
+  background: #f5de75;
+  height: 374px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003510}}
+main .carousel .image .link-carousel.without-img .name-and-description-of-banner {
+  top: 40% !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003512}}
+main .carousel .image .link-carousel.without-img .name-and-description-of-banner .name-of-banner {
+  color: black !important;
+  margin-bottom: 20px !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000331}}
+main .carousel .image .link-carousel.without-img .name-and-description-of-banner .name-of-banner:hover {
+  color: #f25663;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000334}}
+main .carousel .image .link-carousel.without-img .name-and-description-of-banner .name-of-banner:after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0px;
+  margin: 0 auto;
+  margin-top: 2px;
+  background-color: #808080;
+  -webkit-transition: width .3s ease-in-out;
+          transition: width .3s ease-in-out;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000344}}
+main .carousel .image .link-carousel.without-img .name-and-description-of-banner .name-of-banner:hover:after, main .carousel .image .link-carousel.without-img .name-and-description-of-banner .name-of-banner:focus:after {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003516}}
+main .carousel .image .link-carousel.without-img .name-and-description-of-banner .name-of-banner span {
+  color: #4bb8f0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003520}}
+main .carousel .image .link-carousel.without-img .name-and-description-of-banner .description-of-banner {
+  color: black !important;
+  font-style: italic;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003527}}
+main .carousel .image .active-img {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003532}}
+main .carousel .dots {
+  width: 100%;
+  margin: 0 auto;
+  height: 80px;
+  position: relative;
+  bottom: 81px;
+  z-index: 1;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003541}}
+main .carousel .dots .dots-container {
+  margin: 0 auto;
+  margin-top: 29px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003544}}
+main .carousel .dots .dots-container .dot, main .carousel .dots .dots-container .active-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #c8c8c8;
+  margin-right: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003554}}
+main .carousel .dots .dots-container .dot:last-child, main .carousel .dots .dots-container .active-dot:last-child {
+  margin-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003558}}
+main .carousel .dots .dots-container .active-dot {
+  background: #f05461;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003562}}
+main .carousel .dots .dots-container .dot2.active-dot {
+  background: #4bb8f0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003571}}
+main .banners {
+  border-bottom: 1px solid #f6f6f6;
+  width: 100%;
+  margin: 0 auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003576}}
+main .banner-left, main .banner-right {
+  float: left;
+  width: 49.9%;
+  max-height: 385px;
+  overflow: hidden;
+  position: relative;
+  border-right: 1px solid #f7f7f7;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003583}}
+main .banner-left .name-and-description-of-banner, main .banner-right .name-and-description-of-banner {
+  z-index: 1;
+  position: absolute;
+  right: 86px;
+  top: 49px;
+  width: 168px;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003590}}
+main .banner-left .name-and-description-of-banner .name-of-banner, main .banner-right .name-and-description-of-banner .name-of-banner {
+  margin: 0;
+  margin-bottom: 7px;
+  letter-spacing: 0.83px;
+  font-family: FuturaPT;
+  font-size: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000331}}
+main .banner-left .name-and-description-of-banner .name-of-banner:hover, main .banner-right .name-and-description-of-banner .name-of-banner:hover {
+  color: #f25663;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000334}}
+main .banner-left .name-and-description-of-banner .name-of-banner:after, main .banner-right .name-and-description-of-banner .name-of-banner:after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0px;
+  margin: 0 auto;
+  margin-top: 2px;
+  background-color: #808080;
+  -webkit-transition: width .3s ease-in-out;
+          transition: width .3s ease-in-out;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000344}}
+main .banner-left .name-and-description-of-banner .name-of-banner:hover:after, main .banner-right .name-and-description-of-banner .name-of-banner:hover:after, main .banner-left .name-and-description-of-banner .name-of-banner:focus:after, main .banner-right .name-and-description-of-banner .name-of-banner:focus:after {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003600}}
+main .banner-left .name-and-description-of-banner .description-of-banner, main .banner-right .name-and-description-of-banner .description-of-banner {
+  font-family: Crimson;
+  font-size: 16px;
+  font-style: italic;
+  color: #757575;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003609}}
+main .banner-left img, main .banner-right img {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003613}}
+main .banner-left:hover .name-of-banner::after, main .banner-right:hover .name-of-banner::after {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003616}}
+main .banner-left:hover .name-of-banner, main .banner-right:hover .name-of-banner {
+  color: #f25663;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003622}}
+main .banner-right {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003626}}
+main .banner-right.tablet {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003629}}
+main .items {
+  text-align: center;
+  padding-top: 140px;
+  padding-bottom: 77px;
+  border-bottom: 1px solid #f6f6f6;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003634}}
+main .items h2 {
+  font-size: 60px;
+  font-family: FuturaPT;
+  margin-top: 0;
+  margin-bottom: 100px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003643}}
+main .items .item-container {
+  margin: 0 auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003645}}
+main .items .item-container .item {
+  width: 240px;
+  margin-right: 68.5px;
+  vertical-align: top;
+  margin-bottom: 100px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003650}}
+main .items .item-container .item:last-child {
+  margin-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003653}}
+main .items .item-container .item .image-of-item {
+  width: 100%;
+  margin: 0;
+  background: #f7f7f7;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003657}}
+main .items .item-container .item .image-of-item img {
+  max-height: 340px;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003662}}
+main .items .item-container .item .name-of-item, main .items .item-container .item .name-of-item .price {
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003668}}
+main .items .item-container .item .name-of-item .price {
+  font-weight: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003673}}
+main .items .item-container .item .name-of-item:after, main .items .item-container .item .name-of-item .price:after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0px;
+  margin: 0 auto;
+  margin-top: 2px;
+  background-color: #808080;
+  -webkit-transition: width .3s ease-in-out;
+          transition: width .3s ease-in-out;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003683}}
+main .items .item-container .item:hover .name-of-item:after, main .items .item-container .item:hover .name-of-item .price:after {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003686}}
+main .items .item-container .item:hover .name-of-item, main .items .item-container .item:hover .name-of-item .price {
+  color: #f25663;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003692}}
+main .items .btn {
+  background: white;
+  width: 338px;
+  outline: none;
+  height: 75px;
+  border: 1px solid #f6f6f6;
+  font-family: FuturaPT;
+  font-size: 26px;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003703}}
+main .items .btn:hover {
+  color: #f25663;
+  cursor: pointer;
+  border-color: #f25663;
+  -webkit-transition: all ease-in-out .8s;
+  transition: all ease-in-out .8s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003715}}
+main .items .btn.btn-all {
+  box-sizing: border-box;
+  padding-top: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003723}}
+.feedback {
+  border-bottom: 1px solid #f6f6f6;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003725}}
+.feedback .feedback-column {
+  padding-top: 49px;
+  padding-bottom: 88px;
+  float: left;
+  float: left;
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003729}}
+.feedback .feedback-column:nth-child(1), .feedback .feedback-column:nth-child(4) {
+  width: 265px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003732}}
+.feedback .feedback-column:nth-child(2), .feedback .feedback-column:nth-child(3) {
+  width: 325px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003735}}
+.feedback .feedback-column:nth-child(4) {
+  padding-top: 49px;
+  padding-bottom: 0;
+  float: right;
+  position: relative;
+  bottom: 376px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003741}}
+.feedback .feedback-column:nth-child(4) h4 {
+  margin-bottom: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003744}}
+.feedback .feedback-column:nth-child(4) span {
+  font-family: Helvetica;
+  font-size: 14px;
+  margin-top: 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003753}}
+.feedback .feedback-column:nth-child(2) {
+  border-right: 1px solid #f6f6f6;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003757}}
+.feedback .feedback-column:nth-child(3) {
+  padding-left: 55px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003759}}
+.feedback .feedback-column:nth-child(3) p {
+  font-family: Helveti ca;
+  font-size: 14px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003764}}
+.feedback .feedback-column:nth-child(3) p i {
+  margin-right: 10px;
+  color: #d7d7d7;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003769}}
+.feedback .feedback-column:nth-child(3) h4 {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003772}}
+.feedback .feedback-column:nth-child(3) .phone-tablet {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003774}}
+.feedback .feedback-column:nth-child(3) .phone-tablet h4 {
+  margin-bottom: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003777}}
+.feedback .feedback-column:nth-child(3) .phone-tablet span {
+  font-family: Helvetica;
+  font-size: 14px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003784}}
+.feedback .feedback-column:nth-child(3) .question-descr {
+  font-family: Crimson;
+  font-size: 16px;
+  font-style: italic;
+  color: #757575;
+  line-height: 20px;
+  margin-bottom: 48px;
+  margin-top: 60px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003797}}
+.feedback .feedback-column .btn-social-fb {
+  margin-right: 25px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003799}}
+.feedback .feedback-column .btn-social-fb i {
+  color: #3f5e9c;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003803}}
+.feedback .feedback-column .btn-social-fb:hover i {
+  color: #f25663;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003809}}
+.feedback .feedback-column .btn-social-twitter i {
+  color: #4bb8f0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003813}}
+.feedback .feedback-column .btn-social-twitter:hover i {
+  color: #f25663;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003821}}
+.feedback .feedback-column h4 {
+  margin: 0;
+  margin-bottom: 45px;
+  font-family: FuturaPT;
+  font-size: 18px;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003830}}
+.feedback .feedback-column ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003834}}
+.feedback .feedback-column ul li a {
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000331}}
+.feedback .feedback-column ul li a:hover {
+  color: #f25663;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000334}}
+.feedback .feedback-column ul li a:after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0px;
+  margin: 0 auto;
+  margin-top: 2px;
+  background-color: #808080;
+  -webkit-transition: width .3s ease-in-out;
+          transition: width .3s ease-in-out;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000344}}
+.feedback .feedback-column ul li a:hover:after, .feedback .feedback-column ul li a:focus:after {
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003846}}
+.mobile-foot {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003849}}
+footer {
+  padding: 36px 0;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003852}}
+footer .share {
+  position: relative;
+  bottom: 2px;
+  font-family: FuturaPT;
+  font-size: 18px;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003861}}
+footer .footer-left {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003863}}
+footer .footer-left span {
+  font-family: Helvetica;
+  font-size: 12px;
+  color: black;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003871}}
+footer .footer-right {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003873}}
+footer .footer-right a {
+  font-family: Helvetica;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 40px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003880}}
+footer .footer-right a:last-child {
+  margin-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000331}}
+footer .footer-right a:hover {
+  color: #f25663;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000334}}
+footer .footer-right a:after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0px;
+  margin: 0 auto;
+  margin-top: 2px;
+  background-color: #808080;
+  -webkit-transition: width .3s ease-in-out;
+          transition: width .3s ease-in-out;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000344}}
+footer .footer-right a:hover:after, footer .footer-right a:focus:after {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003884}}
+footer .count {
+  display: inline-block;
+  width: 42px;
+  height: 21px;
+  text-align: center;
+  background: #f4f4f4;
+  margin-left: 10px;
+}
+
+/*****************************
+  ╤╥╚╦▓ ─╦▀ ╠╬─└╦▄═╬├╬ ┬▓╩═└**
+******************************
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003900}}
+.modal-content {
+  position: absolute;
+  top: 117px;
+  left: 50%;
+  margin-left: -193px;
+  height: 429px;
+  padding: 45px 64px;
+  background: white;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003909}}
+.modal-content span {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003912}}
+.modal-content .modal-head {
+  color: black;
+  font-family: FuturaPT;
+  font-size: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003920}}
+.modal-title {
+  font-family: FuturaPT;
+  font-size: 105px;
+  color: #f14a58;
+  letter-spacing: 2px;
+  margin-top: 42px;
+  line-height: 122px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003929}}
+.spring-summer {
+  display: inline-block !important;
+  margin-top: 91px;
+  position: relative;
+  font-family: FuturaPT;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003938}}
+.spring-summer.pseudo {
+  margin-right: 83px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003942}}
+.pseudo::after {
+  content: ' ';
+  background: #f14a58;
+  width: 62px;
+  height: 2px;
+  position: absolute;
+  bottom: 46%;
+  margin-left: 16px;
+}
+
+/********************************
+  ╤╥╚╦▓ ─╦▀ ├╬╦╬┬═╬п ╤╥╬╨▓═╩╚ ┬**
+  ╧╦└═╪┼╥═▓╔ ╬╨▓к═╥└╓▓п**********
+**********************************
+*/
+@media screen and (min-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003962}}
+  .banner-left img, main .banner-right img {
+    position: relative;
+    top: 40px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003969}}
+  main .banner-right img {
+    position: static;
+  }
+}
+@media screen and (min-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003976}}
+  .main-menu {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003982}}
+  .modal-content {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003985}}
+  .container {
+    width: 90%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003989}}
+  main .carousel {
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003994}}
+  main .carousel .image .slide.slide1 img {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\00003996}}
+  main .carousel .image .slide.slide1 img:nth-child(3) {
+    display: inline-block;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031001}}
+  main .carousel .image .slide.slide2 {
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031003}}
+  main .carousel .image .slide.slide2 .modal-title {
+    font-size: 130px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031006}}
+  main .carousel .image .slide.slide2 p {
+    font-size: 24px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031009}}
+  main .carousel .image .slide.slide2 .modal-description {
+    font-size: 16px;
+    font-style: italic;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031016}}
+  main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-left, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-left, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right {
+    width: 100%;
+    max-height: 250px;
+    overflow: hidden;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031020}}
+  main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-left img, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-left img, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right img, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right img {
+    min-height: 250px;
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031025}}
+  main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right {
+    width: 50%;
+    background: #f7f7f7;
+    min-height: 257px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031029}}
+  main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right img, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right img {
+    position: relative;
+    left: 0;
+    width: 60%;
+    min-width: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031036}}
+  main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right .name-and-description-of-banner, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right .name-and-description-of-banner {
+    top: 172px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031040}}
+  main .carousel .image .slide.slide3 .slide-left .link-carousel, main .carousel .image .slide.slide3 .slide-right .link-carousel {
+    max-height: 257px;
+    width: 50%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031043}}
+  main .carousel .image .slide.slide3 .slide-left .link-carousel img, main .carousel .image .slide.slide3 .slide-right .link-carousel img {
+    position: relative;
+    left: 0;
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031048}}
+  main .carousel .image .slide.slide3 .slide-left .link-carousel .name-and-description-of-banner, main .carousel .image .slide.slide3 .slide-right .link-carousel .name-and-description-of-banner {
+    top: 172px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031054}}
+  main .carousel .image .slide.slide3 .slide-left .link-carousel.without-img .name-and-description-of-banner, main .carousel .image .slide.slide3 .slide-right .link-carousel.without-img .name-and-description-of-banner {
+    top: 25% !important;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031059}}
+  main .carousel .image .slide.slide3 .slide-left .link-carousel.bag, main .carousel .image .slide.slide3 .slide-right .link-carousel.bag {
+    min-height: 257px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031061}}
+  main .carousel .image .slide.slide3 .slide-left .link-carousel.bag img, main .carousel .image .slide.slide3 .slide-right .link-carousel.bag img {
+    width: 60%;
+    min-height: 100px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031068}}
+  main .carousel .image .slide.slide3 .slide-right img {
+    position: relative;
+    right: 100px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031077}}
+  main .banner-left, main .banner-right {
+    width: 66.4%;
+    min-height: 253px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031080}}
+  main .banner-left img, main .banner-right img {
+    width: 100%;
+    min-height: 253px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031085}}
+  main .banner-left .name-and-description-of-banner, main .banner-right .name-and-description-of-banner {
+    right: 9%;
+    top: 25px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031090}}
+  main .banner-right {
+    width: 33.3%;
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031093}}
+  main .banner-right img {
+    min-height: 253px;
+    max-width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031098}}
+  main .banner-right.tablet {
+    border: none;
+    display: inline-block;
+    width: 33.1%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031105}}
+  main .banner-right.tablet img {
+    min-height: 100px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: 18px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031112}}
+  main .banner-right.tablet .name-and-description-of-banner {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    left: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031120}}
+  main .items {
+    padding-top: 100px;
+    padding-bottom: 140px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031123}}
+  main .items h2 {
+    margin-bottom: 85px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031127}}
+  main .items .item-container .item {
+    width: 26.4%;
+    margin-right: 40px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031130}}
+  main .items .item-container .item:nth-child(3) {
+    margin-right: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031133}}
+  main .items .item-container .item:last-child {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031144}}
+  .feedback .container .feedback-column:first-child {
+    width: 32%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031147}}
+  .feedback .container .feedback-column:nth-child(3), .feedback .container .feedback-column:nth-child(2) {
+    width: 27%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031150}}
+  .feedback .container .feedback-column:nth-child(2) {
+    border: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031153}}
+  .feedback .container .feedback-column:nth-child(3) {
+    position: relative;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031155}}
+  .feedback .container .feedback-column:nth-child(3) .question-descr {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031158}}
+  .feedback .container .feedback-column:nth-child(3) .social {
+    margin-top: 180px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031161}}
+  .feedback .container .feedback-column:nth-child(3) .phone-tablet {
+    display: block;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031165}}
+  .feedback .container .feedback-column:nth-child(4) {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031172}}
+  footer .share {
+    position: relative;
+    bottom: 3px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031177}}
+  footer .footer-right a {
+    margin-right: 10px;
+  }
+}
+/******************************************
+  ╤╥╚╦▓ ─╦▀ ├╬╦╬┬═╬п ╤╥╬╨▓═╩╚ ═└ ╠╬┴▓╦▄═╚╒*
+  ╧╨╚╤╥╨╬▀╒ *******************************
+*******************************************
+*/
+@media screen and (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031192}}
+  .items .container {
+    margin-top: -20px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031196}}
+  main .items .item-container .item {
+    margin-bottom: 20px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031200}}
+  main .items .new-arrivals-header {
+    margin-bottom: 20px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031204}}
+  .container {
+    width: 90%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031208}}
+  header {
+    padding-bottom: 15px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031210}}
+  header .logo.mobile {
+    display: inline-block;
+    margin-top: -14px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031214}}
+  header .logo {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031217}}
+  header .sign-in-link, header .bag {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031220}}
+  header .bag {
+    display: inline-block;
+    float: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031223}}
+  header .bag i {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031227}}
+  header .main-menu {
+    display: none;
+    width: 100%;
+    text-align: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031232}}
+  header .main-menu ul li {
+    margin-bottom: 13px;
+    display: block;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031237}}
+  header .main-menu .search {
+    display: inline-block;
+    position: static;
+    float: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031243}}
+  header .main-menu-icon-mobile {
+    display: inline-block;
+    float: right;
+    background: url(../img/ico_menu.png) no-repeat center;
+    width: 34px;
+    height: 67px;
+    padding-left: 20px;
+    margin-top: 0;
+    border-left: 1px solid #f7f7f7;
+    position: absolute;
+    right: 0;
+    top: -28px;
+    cursor: pointer;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031257}}
+  header .main-menu-icon-mobile.active {
+    background: url(../img/ico_close.png) no-repeat center;
+    -webkit-transition: all ease-in-out .1s;
+            transition: all ease-in-out .1s;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031261}}
+  header .search {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031266}}
+  main .carousel {
+    max-height: 690px;
+    position: relative;
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031272}}
+  main .carousel .image .slide.slide1 img {
+    min-height: 690px;
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031275}}
+  main .carousel .image .slide.slide1 img:nth-child(2) {
+    display: inline-block;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031280}}
+  main .carousel .image .slide.slide2 {
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031282}}
+  main .carousel .image .slide.slide2 img {
+    display: none;
+    top: 193px;
+    margin-left: -83px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031286}}
+  main .carousel .image .slide.slide2 img:nth-child(2) {
+    display: inline-block;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031290}}
+  main .carousel .image .slide.slide2 .modal-title {
+    font-size: 70px;
+    margin-bottom: 135px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031294}}
+  main .carousel .image .slide.slide2 p {
+    font-size: 20px;
+    display: block;
+    width: 54%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031299}}
+  main .carousel .image .slide.slide2 .modal-description {
+    font-size: 16px;
+    font-style: italic;
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031306}}
+  main .carousel .image .slide.slide3 .slide-left, main .carousel .image .slide.slide3 .slide-right {
+    width: 100%;
+    height: auto;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031309}}
+  main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-left, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-left, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right {
+    width: 100%;
+    max-height: 235px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031312}}
+  main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-left img, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-left img, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right img, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right img {
+    width: 100%;
+    min-height: 235px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031317}}
+  main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-left .name-and-description-of-banner h3.name-of-banner, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-left .name-and-description-of-banner h3.name-of-banner, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right .name-and-description-of-banner h3.name-of-banner, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right .name-and-description-of-banner h3.name-of-banner {
+    font-size: 24px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031320}}
+  main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-left .name-and-description-of-banner span.description-of-banner, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-left .name-and-description-of-banner span.description-of-banner, main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right .name-and-description-of-banner span.description-of-banner, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right .name-and-description-of-banner span.description-of-banner {
+    font-size: 14px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031325}}
+  main .carousel .image .slide.slide3 .slide-left .upper-link-carousel-right, main .carousel .image .slide.slide3 .slide-right .upper-link-carousel-right {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031328}}
+  main .carousel .image .slide.slide3 .slide-left .link-carousel, main .carousel .image .slide.slide3 .slide-right .link-carousel {
+    width: 50%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031330}}
+  main .carousel .image .slide.slide3 .slide-left .link-carousel:nth-child(5), main .carousel .image .slide.slide3 .slide-right .link-carousel:nth-child(5) {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031333}}
+  main .carousel .image .slide.slide3 .slide-left .link-carousel img, main .carousel .image .slide.slide3 .slide-right .link-carousel img {
+    position: static;
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031337}}
+  main .carousel .image .slide.slide3 .slide-left .link-carousel img.jeans, main .carousel .image .slide.slide3 .slide-right .link-carousel img.jeans {
+    width: 119%;
+    position: relative;
+    right: 20px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031343}}
+  main .carousel .image .slide.slide3 .slide-left .link-carousel .name-and-description-of-banner h3.name-of-banner, main .carousel .image .slide.slide3 .slide-right .link-carousel .name-and-description-of-banner h3.name-of-banner {
+    font-size: 24px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031346}}
+  main .carousel .image .slide.slide3 .slide-left .link-carousel .name-and-description-of-banner span.description-of-banner, main .carousel .image .slide.slide3 .slide-right .link-carousel .name-and-description-of-banner span.description-of-banner {
+    font-size: 14px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031352}}
+  main .carousel .image .slide.slide3 .slide-right {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031358}}
+  main .carousel .dots {
+    position: absolute;
+    bottom: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031363}}
+  main .banners {
+    width: 99%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031365}}
+  main .banners .banner-left, main .banners .banner-right {
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031367}}
+  main .banners .banner-left img, main .banners .banner-right img {
+    min-height: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031370}}
+  main .banners .banner-left .name-and-description-of-banner, main .banners .banner-right .name-and-description-of-banner {
+    top: 13px;
+    right: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031373}}
+  main .banners .banner-left .name-and-description-of-banner h3, main .banners .banner-right .name-and-description-of-banner h3 {
+    font-size: 24px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031376}}
+  main .banners .banner-left .name-and-description-of-banner span, main .banners .banner-right .name-and-description-of-banner span {
+    font-size: 14px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031381}}
+  main .banners .banner-right {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031385}}
+  main .items {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031388}}
+  main .items .new-arrivals-header {
+    font-size: 30px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031392}}
+  main .items .item-container .item {
+    width: 44%;
+    margin-right: 5%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031396}}
+  main .items .item-container .item:nth-child(3), main .items .item-container .item:last-child {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031401}}
+  main .items .btn.btn-all {
+    font-size: 20px;
+    padding-top: 25px;
+    width: 220px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031408}}
+  .feedback {
+    border-bottom: 1px solid #f6f6f6;
+    max-height: 308px;
+    overflow: hidden;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031412}}
+  .feedback .feedback-column {
+    padding-bottom: 32px;
+    padding-top: 10px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031415}}
+  .feedback .feedback-column h4 {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031419}}
+  .feedback .feedback-column ul li a {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031423}}
+  .feedback .feedback-column p {
+    font-size: 12px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031426}}
+  .feedback .feedback-column:nth-child(1) {
+    width: 25%;
+    min-height: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031430}}
+  .feedback .feedback-column:nth-child(2) {
+    padding-bottom: 0;
+    float: right;
+    border-right: none;
+    width: auto;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031436}}
+  .feedback .feedback-column:nth-child(3) {
+    padding-left: 0;
+    padding-top: 10px;
+    width: 100%;
+    border-top: 1px solid #f6f6f6;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031441}}
+  .feedback .feedback-column:nth-child(3) .question-descr {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031444}}
+  .feedback .feedback-column:nth-child(3) .social {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031449}}
+  .feedback .feedback-column:nth-child(4) {
+    float: right;
+    bottom: 144px;
+    width: 43%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031456}}
+  .mobile-foot {
+    display: inline-block;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f6f6f6;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031462}}
+  .mobile-foot .footer-right {
+    float: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031464}}
+  .mobile-foot .footer-right a {
+    font-family: Helvetica;
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 7px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031471}}
+  .mobile-foot .footer-right a:last-child {
+    margin-right: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000331}}
+  .mobile-foot .footer-right a:hover {
+    color: #f25663;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000334}}
+  .mobile-foot .footer-right a:after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0px;
+    margin: 0 auto;
+    margin-top: 2px;
+    background-color: #808080;
+    -webkit-transition: width .3s ease-in-out;
+            transition: width .3s ease-in-out;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\0000344}}
+  .mobile-foot .footer-right a:hover:after, .mobile-foot .footer-right a:focus:after {
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031477}}
+  .mobile-foot .social {
+    float: right;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031479}}
+  .mobile-foot .social .btn-social-fb {
+    margin-right: 25px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031481}}
+  .mobile-foot .social .btn-social-fb i {
+    color: #3f5e9c;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031485}}
+  .mobile-foot .social .btn-social-fb:hover i {
+    color: #f25663;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031491}}
+  .mobile-foot .social .btn-social-twitter i {
+    color: #4bb8f0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031496}}
+  .mobile-foot .social .btn-social-twitter:hover i {
+    color: #f25663;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031505}}
+  footer {
+    padding: 20px 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031507}}
+  footer .footer-left span {
+    font-size: 10px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031511}}
+  footer .share {
+    font-size: 16px;
+    float: right;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031516}}
+  footer .footer-right {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031520}}
+  .modal-content {
+    position: absolute;
+    top: 92px;
+    left: 50%;
+    margin-left: -113px;
+    height: 347px;
+    padding: 45px 19px;
+    background: white;
+    text-align: center;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031529}}
+  .modal-content .modal-head {
+    font-size: 16px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/github\/krek\/FinalTask\/css\/start-style\.scss}line{font-family:\000031532}}
+  .modal-content .modal-title {
+    font-size: 68px;
+    line-height: normal;
+  }
+}
+
+/*# sourceMappingURL=start-style.css.map */
