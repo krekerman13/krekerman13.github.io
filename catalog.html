@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/font.css"/>
+    <link rel="stylesheet" href="font/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/start-style.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <script src="js/common/jquery-3.1.0.min.js"></script>
+    <script src="js/basket.js"></script>
+    <script src ="js/start.js"></script>
+    <script src="js/DragController.js   "></script>
+    <script src="js/range.js"></script>
+    <title>Catalog</title>
+</head>
+<body>
+<header>
+    <div class="container clearfix">
+        <a href="start.html" class="logo">Template</a>
+        <a href="start.html" class="logo mobile">TL</a>
+        <a href="shopping-bag.html" class="bag"><i class="fa fa-shopping-bag"></i>Bag</a>
+        <a href="" class="sign-in-link">E-mail sing up</a>
+        <div class="main-menu-icon-mobile"></div>
+        <div class="clearfix"></div>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="catalog.html">Women</a></li>
+                <li><a href="catalog.html">Men</a></li>
+                <li><a href="catalog.html">Handbags</a></li>
+                <li><a href="catalog.html">Accessories</a></li>
+                <li><a href="catalog.html">Sale</a></li>
+                <li><a href="catalog.html">New Arrivals</a></li>
+                <li><a href="catalog.html">Clearance</a></li>
+                <li><a href="#">Store Locator</a></li>
+                <div class="search clearfix">
+                    <input type="submit" class="search-btn" value="&nbsp;"/>
+                    <input type="search" placeholder="Style Name"/>
+                </div>
+            </ul>
+        </nav>
+        <div class="search clearfix">
+            <input type="submit" class="search-btn" value="&nbsp;"/>
+            <input type="search" placeholder="Style Name"/>
+        </div>
+    </div>
+</header>
+<section class="filters">
+    <div class="left-filter"></div>
+    <div class="right-filter"></div>
+    <div class="container">
+        <div class="filter  filter-by-style">
+            <span>Fashion</span><span class="icon-filter"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <span class="selected-filters"></span>
+            <div class="multiselect desktop">
+                <ul>
+                    <li>Casual</li>
+                    <li>Vintage</li>
+                    <li>Sport</li>
+                    <li>Kids</li>
+                    <li>Lifestyle</li>
+                </ul>
+            </div>
+        </div>
+        <div class="filter filter-by-product">
+            <span>Product type</span><span class="icon-filter"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <span class="selected-filters"></span>
+            <div class="multiselect desktop">
+                <ul>
+                    <li>Jackets</li>
+                    <li>Coats</li>
+                    <li>Shorts</li>
+                    <li>Shoes</li>
+                    <li>Hats</li>
+                </ul>
+            </div>
+        </div>
+        <div class="filter filter-by-brand">
+            <span>Brand</span><span class="icon-filter"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <span class="selected-filters"></span>
+            <div class="multiselect desktop">
+                <ul>
+                    <li>Adidas</li>
+                    <li>Nike</li>
+                    <li>Fjallraven</li>
+                    <li>Napapijri</li>
+                    <li>Mammut</li>
+                </ul>
+            </div>
+        </div>
+        <div class="filter filter-by-size">
+            <span>Size</span><span class="icon-filter"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <span class="selected-filters"></span>
+            <div class="multiselect desktop">
+                <ul>
+                    <li>XS</li>
+                    <li>S</li>
+                    <li>M</li>
+                    <li>L</li>
+                    <li>XL</li>
+                </ul>
+            </div>
+        </div>
+        <div class="filter filter-by-color">
+            <span>Color</span><span class="icon-filter"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <span class="selected-filters"></span>
+            <div class="multiselect desktop">
+                <ul>
+                    <li>Blue</li>
+                    <li>Red</li>
+                    <li>White</li>
+                    <li>Black</li>
+                    <li>Green</li>
+                </ul>
+            </div>
+        </div>
+        <div class="filter filter-by-price">
+            <span>Price range</span>
+            <span class="selected-filters"></span>
+            <span class="min-value">£ 12.00</span>
+            <span class="current-value">&nbsp;
+            </span>
+            <span class="max-value">£ 650.00</span>
+            <span class="icon-filter"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+            <div class="range" id="range">
+                <div class="thumb thumb-left"></div>
+                <div class="thumb thumb-right"></div>
+            </div>
+        </div>
+        <div class="mobile-icon"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+        </div>
+        <div class="multiselect mobile" id="multimobile">
+            <div class="droppable">
+                <span>Drag and select</span>
+            </div>
+            <span class="header-mobile-filter">Fashion</span>
+            <ul class="filter-by-style">
+                <li class="no-selected">No selected<span>,</span></li>
+                <li class="draggable">Casual,</li>
+                <li class="draggable">Vintage,</li>
+                <li class="draggable">Sport,</li>
+                <li class="draggable">Kids,</li>
+                <li class="draggable">Lifestyle,</li>
+            </ul>
+            <span class="header-mobile-filter">Product</span>
+            <ul class="filter-by-product">
+                <li class="no-selected">No selected<span>,</span></li>
+                <li class="draggable">Jackets,</li>
+                <li class="draggable">Coats,</li>
+                <li class="draggable">Shorts,</li>
+                <li class="draggable">Shoes,</li>
+                <li class="draggable">Hats,</li>
+
+            </ul>
+            <span class="header-mobile-filter">Brand</span>
+            <ul class="filter-by-brand">
+                <li class="no-selected">No selected<span>,</span></li>
+                <li class="draggable">Adidas,</li>
+                <li class="draggable">Nike,</li>
+                <li class="draggable">Fjallraven,</li>
+                <li class="draggable">Napapijri,</li>
+                <li class="draggable">Mammut,</li>
+            </ul>
+            <span class="header-mobile-filter">Size</span>
+            <ul class="filter-by-size">
+                <li class="no-selected">No selected<span>,</span></li>
+                <li class="draggable">XS,</li>
+                <li class="draggable">S,</li>
+                <li class="draggable">M,</li>
+                <li class="draggable">L,</li>
+                <li class="draggable">XL,</li>
+            </ul>
+            <span class="header-mobile-filter">Color</span>
+            <ul class="filter-by-color">
+                <li class="no-selected">No selected<span>,</span></li>
+                <li class="draggable">Blue,</li>
+                <li class="draggable">Red,</li>
+                <li class="draggable">White,</li>
+                <li class="draggable">Black,</li>
+                <li class="draggable">Green,</li>
+            </ul>
+            <span class="header-mobile-filter">Price</span>
+            <ul class="filter-by-price">
+                <li class="no-selected">No selected<span>,</span></li>
+                <li class="draggable">£0 - £50,</li>
+                <li class="draggable">£50 - £100,</li>
+                <li class="draggable">£100 - £150,</li>
+                <li class="draggable">£150 - £300,</li>
+                <li class="draggable">£300+</li>
+            </ul>
+        </div>
+</section>
+<div id="podlogka"></div>
+<main>
+<section class="items catalog">
+    <div class=" container clearfix">
+        <div class="item-container">
+            <a class="item" href="item.html">
+                <figure class="image-of-item"><img src="img/catalog-item-img1.png" alt=""/></figure>
+                <h4 class="name-of-item">Only Skinny Jeans</h4>
+                <span class="price">£65.50</span></a>
+            <a class="item" href="item.html">
+                <figure class="image-of-item"><img src="img/photo-item.png" alt=""/></figure>
+                <h4 class="name-of-item">Neck Knitted Jumper<br>
+                    Bohemian Print</h4>
+                <span class="price">£76.25</span></a>
+            <a class="item" href="item3.html">
+                <figure class="image-of-item"><img src="img/catalog-item-img3.png" alt=""/></figure>
+                <h4 class="name-of-item">Turtle Neck Jumper in Rib</h4>
+                <span class="price">£135.00</span><span class="descr">New</span>
+            </a>
+            <a class="item" href="item2.html">
+                <figure class="image-of-item"><img src="img/catalog-item-img4.png" alt=""/></figure>
+                <h4 class="name-of-item">With Patchwork Crochet</h4>
+                <span class="price">£100.99</span></a>
+        </div>
+        <section class="promo">
+            <p>Last weekend <span>extra 50%</span> off on all reduced boots and shoulder bags</p>
+            <p>This offer is valid in-store and online. Prices displayed reflect this additional discount. This offer ends at 11:59 GMT on March 1st 2015</p>
+        </section>
+        <div class="item-container">
+            <a class="item levis" href="item2.html">
+                <figure class="image-of-item">
+                    <img src="img/catalog-item-img-levis.png" alt=""/>
+                    <img src="img/levis-tabler.png" alt=""/>
+                    <div class="hover-effect">
+                        </div>
+                    <div class="name-and-description-of-hover-effect">
+                        <span class="name-hover-effect">Levis</span>
+                        <span class="descr-hover-effect">Buyer`s choise</span>
+                    </div>
+                </figure>
+                <h4 class="name-of-item">Levi`s Jeans for women</h4>
+                <span class="descr">More Colours</span></a>
+            <a class="item" href="item.html">
+                <figure class="image-of-item"><img src="img/catalog-item-img6.png" alt=""/></figure>
+                <h4 class="name-of-item">Boyfriend T-Shirt with<br>
+                    Bohemian Print</h4>
+                <span class="descr">£120.00-25%</span><span class="price">£90.00</span></a>
+            <a class="item" href="item.html">
+                <figure class="image-of-item"><img src="img/catalog-item-img7.png" alt=""/></figure>
+                <h4 class="name-of-item">Colour Block</h4>
+                <span class="price">£550.00</span></a>
+            <a class="item" href="#">
+                <figure class="image-of-item"><img src="img/catalog-item-img8.png" alt=""/></figure>
+                <h4 class="name-of-item">Monki Festival Knitted</h4>
+                <span class="price">£24.75</span></a>
+        </div>
+        <div class="item-container">
+            <a class="item" href="item3.html">
+                <figure class="image-of-item"><img src="img/catalog-item-img9.png" alt=""/>
+                </figure>
+                <h4 class="name-of-item">Oversized Cardigan</h4>
+                <span class="price">£90.00</span></a>
+            <a class="item" href="item.html">
+                <figure class="image-of-item"><img src="img/catalog-item-img10.png" alt=""/></figure>
+                <h4 class="name-of-item">Paul & Joe Sister Jumper<br>
+                    with Neon Trims</h4>
+                <span class="price">£19.75</span><span class="descr">New</span></a>
+            <div class="item">
+                <a href="item3.html" class="big-link-item"></a>
+                <figure class="image-of-item">
+                    <img src="img/catalog-item-img11.png" alt=""/>
+                    <div class="hover-effect">
+                    </div>
+                    <div class="name-and-description-of-hover-effect quick-links">
+                        <a href="item3.html" class="name-hover-effect">Quick view</a>
+                        <a href="item3.html" class="descr-hover-effect">More photos</a>
+                    </div>
+                </figure>
+                <h4 class="name-of-item">Only Busted Knee Jean</h4>
+                <span class="price">£140.50</span></div>
+            <a class="item" href="#item3.html">
+                <figure class="image-of-item"><img src="img/catalog-item-img12.png" alt=""/></figure>
+                <h4 class="name-of-item">Boyfriend T-Shirt with<br>
+                    Bohemian Print</h4></h4>
+                <span class="price">£88.75</span></a>
+        </div>
+        <div class="item-container tablet">
+            <a class="item" href="item.html">
+                <figure class="image-of-item"><img src="img/catalog-item-img12.png" alt=""/></figure>
+                <h4 class="name-of-item">Boyfriend T-Shirt with<br>
+                    Bohemian Print</h4></h4>
+                <span class="price">£88.75</span></a>
+            <a class="item" href="item2.html">
+                <figure class="image-of-item"><img src="img/catalog-item-img8.png" alt=""/></figure>
+                <h4 class="name-of-item">Monki Festival Knitted</h4>
+                <span class="price">£24.75</span></a>
+            <a class="item" href="#">
+                <figure class="image-of-item"><img src="img/catalog-item-img4.png" alt=""/></figure>
+                <h4 class="name-of-item">With Patchwork Crochet</h4>
+                <span class="price">£100.99</span></a>
+        </div>
+        <div class="item-container hidden">
+            <a class="item" href="item.html">
+                <figure class="image-of-item"><img src="img/catalog-item-img1.png" alt=""/></figure>
+                <h4 class="name-of-item">Only Skinny Jeans</h4>
+                <span class="price">£65.50</span></a>
+            <a class="item" href="item.html">
+                <figure class="image-of-item"><img src="img/photo-item.png" alt=""/></figure>
+                <h4 class="name-of-item">Neck Knitted Jumper<br>
+                    Bohemian Print</h4>
+                <span class="price">£76.25</span></a>
+            <a class="item" href="item3.html">
+                <figure class="image-of-item"><img src="img/catalog-item-img3.png" alt=""/></figure>
+                <h4 class="name-of-item">Turtle Neck Jumper in Rib</h4>
+                <span class="price">£135.00</span><span class="descr">New</span>
+            </a>
+            <a class="item" href="item2.html">
+                <figure class="image-of-item"><img src="img/catalog-item-img4.png" alt=""/></figure>
+                <h4 class="name-of-item">With Patchwork Crochet</h4>
+                <span class="price">£100.99</span></a>
+        </div>
+        <button class="btn btn-more">Show more</button>
+        </div>
+</section>
+    <section class="catalog-banners">
+        <a href="item.html" class="upper-link-carousel-left">
+            <img src="img/photo_fin1.png" alt=""/>
+            <div class="name-and-description-of-banner">
+                <h3 class="name-of-banner">Adidas Blue</h3>
+                <span class="description-of-banner">For men</span>
+            </div>
+        </a>
+        <a href="item2.html" class="link-carousel">
+            <img class="jeans" src="img/jeans.png" alt=""/>
+            <div class="name-and-description-of-banner">
+                <h3 class="name-of-banner">Repair Patches</h3>
+                <span class="description-of-banner">£150.50</span>
+            </div>
+        </a>
+        <a href="catalog.html" class="link-carousel bag">
+            <img  src="img/bag.png" alt=""/>
+            <div class="name-and-description-of-banner">
+                <h3 class="name-of-banner">Sale</h3>
+                <span class="description-of-banner">-70%</span>
+            </div>
+        </a>
+    </section>
+<section class="feedback">
+    <div class="container clearfix">
+        <div class="feedback-column">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="">Store Locator</a></li>
+                <li><a href="">Gift Cards</a></li>
+                <li><a href="">Size Guide</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Support</a></li>
+            </ul>
+        </div>
+        <div class="feedback-column">
+            <h4>Customer Care</h4>
+            <ul>
+                <li><a href="">Customer Service</a></li>
+                <li><a href="">Track My Order</a></li>
+                <li><a href="">Return Policy</a></li>
+                <li><a href="">Shipping & Delivery</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Careers</a></li>
+            </ul>
+        </div>
+        <div class="feedback-column">
+            <h4>Questions</h4>
+            <p> <i class="fa fa-twitter"></i>Tweet us <b>@template</b></p>
+            <p class="question-descr">We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.</p>
+            <div class="phone-tablet">
+                <h4>Order by Phone</h4>
+                <span>8-800-409-47-12</span>
+            </div>
+            <div class="social">
+                <a href="http://facebook.com" class="btn-social btn-social-fb"><i class="fa fa-facebook"></i> &nbsp;</a>
+                <a href="http://twitter.com" class="btn-social btn-social-twitter"><i class="fa fa-twitter"></i>&nbsp;</a>
+            </div>
+        </div>
+        <div class="feedback-column">
+            <h4>Order by Phone</h4>
+            <span>8-800-409-47-12</span>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</section>
+<section class="mobile-foot">
+    <div class="container">
+        <section class="footer-right">
+            <a href="#">Legal notice</a><a href="#">Privacy policy</a><a href="#">Site map</a>
+        </section>
+        <div class="social">
+            <a href="http://facebook.com" class="btn-social btn-social-fb"><i class="fa fa-facebook"></i> &nbsp;</a>
+            <a href="http://twitter.com" class="btn-social btn-social-twitter"><i class="fa fa-twitter"></i>&nbsp;</a>
+        </div>
+    </div>
+
+</section>
+</main>
+<footer>
+    <div class="container">
+        <section class="footer-left">
+            <span class="copyright">© 2010–2015, The Template Group inc.</span>
+        </section>
+        <span class="share"><b>Share</b><span class="count">143</span></span>
+        <section class="footer-right">
+            <a href="#">Legal notice</a><a href="#">Privacy policy</a><a href="#">Site map</a>
+        </section>
+    </div>
+
+</footer>
+</body>
+</html>
